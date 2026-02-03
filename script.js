@@ -1,4 +1,3 @@
-// ====== Личный кабинет ======
 const usernameInput = document.getElementById("username");
 const saveNameBtn = document.getElementById("saveName");
 const userPanel = document.getElementById("userPanel");
@@ -28,7 +27,6 @@ saveNameBtn.onclick = () => {
 
 showWelcome();
 
-// ====== Матчи ======
 const matchesData = [
   {id:1, team1:"Спартак", team2:"ЦСКА"},
   {id:2, team1:"Зенит", team2:"Локомотив"},
@@ -69,7 +67,6 @@ function renderMatches() {
 
 renderMatches();
 
-// ====== Таблица лидеров ======
 function getLeaderboard() {
   const data = JSON.parse(localStorage.getItem("leaderboard")||"{}");
   return data;
@@ -96,7 +93,6 @@ function renderLeaderboard() {
 
 renderLeaderboard();
 
-// ====== Админка ======
 const modal = document.getElementById("adminModal");
 document.getElementById("openAdmin").onclick = ()=>modal.style.display="flex";
 modal.onclick = e=>{if(e.target===modal) modal.style.display="none";};
