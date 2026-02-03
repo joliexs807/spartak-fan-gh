@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: #121212;
+  color: #fff;
+}
+
+h1, h2 { margin-bottom: 10px; }
+
+#nameForm { margin-bottom: 20px; }
+#nameForm input, #nameForm button {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+}
+
+button:hover:not(:disabled) { transform: scale(1.05); transition: 0.2s; }
+
+.match { background: #1e1e1e; padding: 15px; border-radius: 12px; margin-bottom: 15px; }
+
+.buttons { display: flex; gap: 10px; margin-top: 10px; }
+button.win1 { background: #2ecc71; }
+button.draw { background: #f1c40f; color: #000; }
+button.win2 { background: #3498db; }
+
+button:disabled { opacity: 0.4; cursor: default; }
+
+.admin-btn { position: fixed; bottom: 20px; right: 20px; background: #555; color: #fff; }
+
+#adminModal { position: fixed; inset: 0; background: rgba(0,0,0,.7); display: none; align-items: center; justify-content: center; }
+.modal { background: #222; padding: 20px; border-radius: 10px; width: 260px; }
+
+input { width: 100%; margin-bottom: 10px; }
+
+table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+table th, table td { border: 1px solid #555; padding: 8px; text-align: center; }
